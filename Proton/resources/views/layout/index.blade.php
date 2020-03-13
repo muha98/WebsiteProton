@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
   </head>
   <body>
-  <div class="fixed-top" style="background:white">
+  <div class="fixed-top" class="navbar navbar-light" style="background-color: #e3f2fd;"style="background:white">
   <img src="{{ ('img/ptn.jpg') }}" width="100" height="100" class="float-left" style="margin-left: 60px; margin-top: 6px;">
     @yield('container1')
     <nav class="navbar navbar-expand-lg" >
