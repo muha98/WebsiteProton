@@ -2,8 +2,8 @@
 
 namespace Illuminate\Database;
 
-use Illuminate\Support\Str;
 use Throwable;
+use Illuminate\Support\Str;
 
 trait DetectsLostConnections
 {
@@ -38,10 +38,6 @@ trait DetectsLostConnections
             'Packets out of order. Expected',
             'Adaptive Server connection failed',
             'Communication link failure',
-            'connection is no longer usable',
-            'Login timeout expired',
-            'Connection refused',
-            'running with the --read-only option so it cannot execute this statement',
         ]);
     }
 }

@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row">
     <div class="col-10">
-    <h1>Login PROTON</h1>
+    <h1 class="display-4">Login PROTON</h1>
     </div>
   </div>
 </div>

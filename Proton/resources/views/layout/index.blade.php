@@ -11,8 +11,8 @@
     <title>@yield('title')</title>
   </head>
   <body>
-  <div class="fixed-top" class="navbar navbar-light" style="background-color: #e3f2fd;"style="background:white">
-  <img src="{{ ('img/ptn.jpg') }}" width="100" height="100" class="float-left" style="margin-left: 60px; margin-top: 6px;">
+  <div class="fixed-top" style="background: linear-gradient(#8ac6d1, #FFFFFF);">
+  <img src="{{ ('img/ptn.jpg') }}" width="100" height="100" class="float-left" style="margin-left: 60px; margin-top: 17px; border: 5px outset white">
     @yield('container1')
     <nav class="navbar navbar-expand-lg" >
     <a class="navbar-brand" href="/">
@@ -20,25 +20,25 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" style="margin-bottom:5px">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="btn btn-outline-primary" style="font-size: 15px" href="{{url('/')}}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/materi">Materi</a>
+        <a class="btn btn-outline-primary" style="font-size: 15px; margin-left: 20px" href={{url('/materi')}}>Materi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/video">Video</a>
+        <a class="btn btn-outline-primary" style="font-size: 15px; margin-left: 20px" href={{url('/video')}}>Video</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/staff">Staff</a>
+        <a class="btn btn-outline-primary" style="font-size:15px; margin-left: 20px" href={{url('/staff')}}>Staff</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="btn btn-outline-primary" style="font-size: 15px; margin-left: 20px" href={{url('/about')}}>About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/login">Log In</a>
+        <a class="btn btn-outline-primary" style="font-size: 15px; margin-left: 600px" href={{url('/login')}}>Log In</a>
       </li>
     </ul>
   </div>
@@ -46,10 +46,8 @@
 </div>
 
   @yield('container2')
-  <div class="card">
-  <div class="card-footer">
-    About Us
-  </div>
+
+  <div class="card" style="background: linear-gradient(#8ac6d1, #FFFFFF);">
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p>Website Pembelajaran Proton dari bimbingan belajar proton</p>
